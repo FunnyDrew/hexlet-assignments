@@ -8,13 +8,15 @@ class StackTest < Minitest::Test
   def test_add_to_empty
     stack = Stack.new
     expected = ['ruby']
-    assert { stack.push!('ruby').to_a == expected }
+    stack.push!('ruby')
+    assert { stack.to_a == expected }
   end
 
   def test_add_to_not_empty
     stack = Stack.new(['ruby'])
-    expected = %w['ruby js']
-    assert { stack.push!('js').to_a == expected }
+    expected = %w[ruby js]
+    stack.push!('js')
+    assert { stack.to_a == expected }
   end
 
   def test_deletion
