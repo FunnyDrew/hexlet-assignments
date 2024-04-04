@@ -9,10 +9,12 @@ class TasksController < ApplicationController
 
 	def create
 		@task = Task.new(task_params)
-
+		@task.completed = false
 		if @task.save
-			redirect_to article_path(@article)
-		else
+			flash[:success] = 'New task successfuly created'
+			redirect_to task_path(@task)
+	
+			flash[:error] = "Wrong values for fields or fields are empty"
 			render :new
 		end
 	end
