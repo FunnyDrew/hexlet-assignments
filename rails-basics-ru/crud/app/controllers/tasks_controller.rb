@@ -13,8 +13,8 @@ class TasksController < ApplicationController
 		if @task.save
 			flash[:success] = 'New task successfuly created'
 			redirect_to task_path(@task)
-	
-			flash[:error] = "Wrong values for fields or fields are empty"
+		else	
+			flash[:failure] = 'Task cannot be created'
 			render :new
 		end
 	end
