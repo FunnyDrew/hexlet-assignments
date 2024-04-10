@@ -19,8 +19,29 @@ class TasksController < ApplicationController
 		end
 	end
 
+	def edit
+		@task = Task.find(params[:id])
+	end
+
+	def update
+		@task = Task.find(params[:id])
+		if @task.update(task_params)
+			flash[:success] = 'Task successfuly updated'
+			redirect_to task_path(@task)
+		else	
+			flash[:failure] = 'Task cannot be created'
+			render :edit
+		end
+	end
+
 	def show
 		@task = Task.find(params[:id])
+	end
+
+	def destroy
+		@task = Task.find(params[:id])
+		@task.destroy
+		redirect_to tasks_path
 	end
 
 	private

@@ -14,17 +14,17 @@
 #
 
 one:
-  name: MyString
-  description: MyText
-  status: MyString
-  creator: MyString
-  performer: MyString
+  name: Triangulation
+  description: Triangulation of Delone
+  status: new
+  creator: Andrew Bedon
+  performer: Steven Prudon
   completed: false
 
 two:
-  name: MyString
-  description: MyText
-  status: MyString
-  creator: MyString
-  performer: MyString
+  name: FEM
+  description: FEM Analysis
+  status: in process
+  creator: Steve Prudon
+  performer: Andrew Bedon
   completed: false

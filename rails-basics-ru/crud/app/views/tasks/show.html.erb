@@ -21,3 +21,8 @@
 <p>
 	<%=@task.completed%>
 </p>
+<hr>
+<%=link_to 'Edit', edit_task_path(@task)%>
+<div>
+	<%=link_to 'Delete', task_path(@task), data:{"turbo-method": :delete}%>
+</div>
