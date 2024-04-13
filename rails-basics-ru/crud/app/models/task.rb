@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: tasks
@@ -13,11 +15,10 @@
 #  updated_at  :datetime         not null
 #
 class Task < ApplicationRecord
+  validates :name, presence: true
+  validates :status, presence: true
+  validates :creator, presence: true
+  validates :completed, inclusion: [true, false]
 
-	validates :name, presence: true
-	validates :status, presence: true
-	validates :creator, presence: true
-	validates :completed, inclusion: [true, false]
-
-	attribute :status, default: -> { "new" }
+  attribute :status, default: -> { 'new' }
 end
