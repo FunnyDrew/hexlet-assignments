@@ -1,6 +1,7 @@
 class TasksController < ApplicationController
 	def index
 		@tasks = Task.all
+		flash[:success]= 'Everything is allright'
 	end
 
 	def new
