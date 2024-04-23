@@ -1,0 +1,12 @@
+= form_with model: task do |form|
+	p
+		=form.label :name, ' Task name '
+		=form.text_field :name
+	p
+		=form.label :description, ' Task description '
+		=form.text_field :description
+	p
+		=form.label :creator, ' Creator of Task '
+		=form.text_field :creator
+	p
+		=form.submit "Create Task"

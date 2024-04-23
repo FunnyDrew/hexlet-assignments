@@ -1,0 +1,13 @@
+h3 Task
+div
+	h3.alert.alert-secondary
+		|Name:
+	p.display-5 #{@task.name}
+div
+	h3.alert.alert-primary
+		|Desctiption:
+	p.display-6 #{@task.description}
+div
+	=link_to 'Edit', edit_task_path(@task)
+div
+	=link_to 'Delete', task_path(@task), data:{"turbo-method": :delete}
