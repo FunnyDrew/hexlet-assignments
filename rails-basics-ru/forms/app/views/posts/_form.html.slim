@@ -1,0 +1,6 @@
+=simple_form_for @post do |form|
+	=form.input :title, label: 'Post Name', placeholder: 'Post Title'
+	=form.input :body
+	=form.input :summary
+	=form.input :published
+	=form.button :submit, class: 'btn btn-primary'
