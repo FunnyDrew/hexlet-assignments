@@ -1,0 +1,53 @@
+---
+ru:
+  posts:
+    # BEGIN
+    create:
+        success: Пост создан.
+
+    update:
+        success: Пост обновлен.
+    index:
+      page_name: Посты
+      post_name: Название
+      comments_field: Комментарии
+      post_links: Сылки для работы с постами
+      show: Показать Пост
+      edit: Редактировать
+      destroy: Удалить
+      comments:
+        zero: нет комментариев
+        one: 1 комментарий
+        few: |
+          %{count} комментария
+        other: |
+          %{count} комментариев
+        many: |
+          %{count} комментариев
+              
+      link_to_new_post: Новый пост
+      
+    edit:
+      title: Название
+      #success: Пост изменен
+
+    destroy:
+      success: Пост удален.
+
+    new:
+      title: Новый пост
+
+    show:
+      body: Пост
+      comments: Комментарии
+    # END
+
+    comments:
+      edit:
+        title: Изменить комментарий
+
+      create:
+        success: Комментарий создан.
+
+      update:
+        success: Комментарий обновлен.

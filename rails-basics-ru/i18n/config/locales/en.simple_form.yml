@@ -1,0 +1,30 @@
+en:
+  simple_form:
+    "yes": 'Yes'
+    "no": 'No'
+    required:
+      text: 'required'
+      mark: '*'
+    error_notification:
+      default_message: "Please check the problems:"
+    placeholders:
+      # BEGIN
+      defaults:
+        edit:
+          title: PostName
+          body: Post Content
+        body: Post Content
+        title: PostName
+
+      post:
+        new:
+          title: Enter post title
+        edit:
+          body: Post Content
+          title: Post Edited Name
+        body: Post Content
+        title: Post Name
+      # END
+      post_comment:
+        body: Enter comment body
+

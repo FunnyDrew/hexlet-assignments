@@ -1,0 +1,52 @@
+en:
+  posts:
+    # BEGIN
+    create:
+        success: Post was created.
+
+    update:
+        success: Post was updated.
+    index:
+      page_name: Posts
+      post_name: Post Name
+      comments_field: Comments
+      post_links: Links for Post
+      show: Show
+      edit: Edit
+      destroy: Delete
+      comments:
+        zero: no comments
+        one: 1 comment
+        few: |
+          %{count} commentus
+        other: |
+          %{count} comments
+      
+        
+      link_to_new_post: New Post
+      
+    edit:
+      title: Edit Post
+      #success: Post was successfuly edited
+
+    destroy:
+      success: Post was destroyed.
+
+    new:
+      title: New Post 
+
+    show:
+      body: Post Content
+      comments: Comments 
+    # END
+
+    comments:
+      edit:
+        title: Editing comment
+
+      create:
+        success: Comment was created.
+
+      update:
+        success: Comment was updated.
+ 
